@@ -1,0 +1,30 @@
+---
+language: python
+python: "2.7"
+env:
+  - PLAY=tests/test.yml
+
+dist: trusty
+
+before_install:
+  - sudo add-apt-repository -y ppa:ondrej/php
+  - sudo apt-get update -qq
+
+install:
+
+  # Install Ansible.
+  - pip install ansible
+
+  # Add ansible.cfg to pick up roles path.
+  - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
+
+script:
+
+  # Create symlink to role with correct name
+  - ln -s ansible-role-wordpress ../MakarenaLabs.ansible_role_wordpress
+
+  # Check the role/playbook's syntax.
+  - ansible-playbook -i tests/inventory $PLAY --syntax-check
+
+  # Run the role/playbook with ansible-playbook.
+  - ansible-playbook -i tests/inventory $PLAY --connection=local --sudo -vvvv
