@@ -27,4 +27,4 @@ script:
   - ansible-playbook -i tests/inventory $PLAY --syntax-check
 
   # Run the role/playbook with ansible-playbook.
-  - ansible-playbook -i tests/inventory $PLAY --connection=local --sudo -vvvv
+  - ansible-playbook -i tests/inventory $PLAY --connection=local --become -vvvv

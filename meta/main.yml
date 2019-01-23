@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: wordpress
   author: matteocastagnaro
   description: WordPress with webserver (Nginx or Apache2)
   company: "makarenalabs.com"
