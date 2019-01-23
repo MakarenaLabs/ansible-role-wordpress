@@ -5,7 +5,7 @@
 [![Ansible Role](https://img.shields.io/ansible/role/36472.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress/)
 ![Ansible Quality](https://img.shields.io/ansible/quality/36472.svg)
 
-Ansible role that installs and configures WordPress with Apache2.
+Ansible role that installs and configures WordPress with Nginx or Apache2.
 
 Features include:
 - Installation of any WordPress version to specified directory
