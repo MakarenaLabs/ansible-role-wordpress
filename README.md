@@ -73,7 +73,7 @@ These variables are required!
     wp_admin_email: 'your@email.com'
     wp_install_dir: "/var/www/{{ wp_sitename }}"
   roles:
-    - MakarenaLabs.ansible_role_wordpress
+    - MakarenaLabs.wordpress
 ```
 
 ## Testing

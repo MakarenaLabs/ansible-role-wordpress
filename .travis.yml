@@ -21,7 +21,7 @@ install:
 script:
 
   # Create symlink to role with correct name
-  - ln -s ansible-role-wordpress ../MakarenaLabs.ansible_role_wordpress
+  - ln -s ansible-role-wordpress ../MakarenaLabs.wordpress
 
   # Check the role/playbook's syntax.
   - ansible-playbook -i tests/inventory $PLAY --syntax-check

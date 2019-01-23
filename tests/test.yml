@@ -10,4 +10,4 @@
     wp_admin_email: 'admin@example.com'
     wp_install_dir: "/var/www/{{ wp_sitename }}"
   roles:
-    - MakarenaLabs.ansible_role_wordpress
+    - MakarenaLabs.wordpress
