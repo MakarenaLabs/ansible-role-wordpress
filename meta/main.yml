@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: matteocastagnaro
+  description: WordPress with webserver (Nginx or Apache2)
+  company: "makarenalabs.com"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+    - yakkety
+  galaxy_tags:
+  - development
+  - web
