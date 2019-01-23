@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/MakarenaLabs/ansible-role-wordpress.svg?branch=master)](https://travis-ci.org/MakarenaLabs/ansible-role-wordpress)
 [![License: MIT](https://img.shields.io/github/license/MakarenaLabs/ansible-role-wordpress.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Version](https://img.shields.io/badge/ansible-%3E%3D_1.4-8892BF.svg)](https://www.ansible.com/)
-[![Ansible Role](https://img.shields.io/ansible/role/36471.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress-apache2/)
+[![Ansible Role](https://img.shields.io/ansible/role/36471.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress/)
 ![Ansible Quality](https://img.shields.io/ansible/quality/36471.svg)
 
 Ansible role that installs and configures WordPress with Apache2.
