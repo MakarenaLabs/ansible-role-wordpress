@@ -48,16 +48,20 @@ wp_db_collate: ''
 wp_table_prefix: 'wp_'
 wp_debug: false
 wp_admin_email: 'admin@example.com'
-webserver: "{{ wp_webserver }}"
+wp_webserver: nginx
 site_name: "{{ wp_sitename }}"
 ```
  - ```wp_mysql_db```
  - ```wp_mysql_user```
  - ```wp_mysql_password```
- - ```wp_webserver```
  - ```wp_sitename```
 
 These variables are required!
+
+Default webserver selected is ```nginx```. If you want to use ```apache2``` you have to set ```wp_webserver``` variable as follow:
+```yaml
+wp_webserver: apache
+```
 
 ## Example playbook
 ```yaml
