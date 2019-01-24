@@ -12,7 +12,7 @@
     update_cache: yes
     cache_valid_time: 86400
     state: present
-  when: webserver == "nginx"
+  when: wp_webserver == "nginx"
 
 - name: Wordpress | Install apache
   apt:
@@ -20,7 +20,7 @@
     update_cache: yes
     cache_valid_time: 86400
     state: present
-  when: webserver == "apache"
+  when: wp_webserver == "apache"
 
 - name: Wordpress | Remove elements from /var/www/html/
   file:
