@@ -1,7 +1,8 @@
 ---
 - name: Wordpress | Install php
   apt:
-    pkg: ['php-pear', 'php-fpm', 'php-dev', 'php-zip', 'php-curl', 'php-xmlrpc', 'php-gd', 'php-mysql', 'php-mbstring', 'php-xml']
+    pkg: ['php-pear', 'php-fpm', 'php-dev', 'php-zip', 'php-curl',
+          'php-xmlrpc', 'php-gd', 'php-mysql', 'php-mbstring', 'php-xml']
     update_cache: yes
     cache_valid_time: 86400
     state: present

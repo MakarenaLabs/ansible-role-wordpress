@@ -1,9 +1,10 @@
 # Ansible Role: WordPress
 [![Build Status](https://travis-ci.org/MakarenaLabs/ansible-role-wordpress.svg?branch=master)](https://travis-ci.org/MakarenaLabs/ansible-role-wordpress)
-[![License: MIT](https://img.shields.io/github/license/MakarenaLabs/ansible-role-wordpress.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/MakarenaLabs/ansible-role-wordpress.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Version](https://img.shields.io/badge/ansible-%3E%3D_1.4-8892BF.svg)](https://www.ansible.com/)
 [![Ansible Role](https://img.shields.io/ansible/role/36472.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress/)
-![Ansible Quality](https://img.shields.io/ansible/quality/36472.svg)
+[![Ansible Quality](https://img.shields.io/ansible/quality/36472.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress/)
+[![Ansible Downloads](https://img.shields.io/ansible/role/d/36472.svg)](https://galaxy.ansible.com/MakarenaLabs/wordpress/)
 
 Ansible role that installs and configures WordPress with Nginx or Apache2.
 
@@ -16,12 +17,12 @@ Features include:
 
 Using `ansible-galaxy`:
 ```shell
-$ ansible-galaxy install MakarenaLabs.wordpress
+$ ansible-galaxy install makarenalabs.wordpress
 ```
 
 Using `arm` ([Ansible Role Manager](https://github.com/mirskytech/ansible-role-manager/)):
 ```shell
-$ arm install MakarenaLabs.wordpress
+$ arm install makarenalabs.wordpress
 ```
 
 Using `git`:
@@ -77,7 +78,7 @@ wp_webserver: apache
     wp_admin_email: 'your@email.com'
     wp_install_dir: "/var/www/{{ wp_sitename }}"
   roles:
-    - MakarenaLabs.wordpress
+    - makarenalabs.wordpress
 ```
 
 ## Testing

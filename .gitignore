@@ -1,4 +1,5 @@
-.vagrant
+.*
 *~
-!.git*
 vagrant_*
+!.travis.yml
+!.gitignore
