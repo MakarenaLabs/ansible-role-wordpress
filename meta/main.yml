@@ -7,11 +7,14 @@ galaxy_info:
   license: "license (BSD, MIT)"
   min_ansible_version: 1.4
   platforms:
-  - name: Ubuntu
-    versions:
-    - trusty
-    - xenial
-    - yakkety
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - yakkety
+    - name: Deboam
+      versions:
+        - buster
   galaxy_tags:
-  - development
-  - web
+    - development
+    - web
