@@ -85,6 +85,19 @@
     state: present
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_release != 'trusty'
 
+- name: Installing mariadb-server
+  apt:
+    pkg: mariadb-server
+    update_cache: yes
+    cache_valid_time: 86400
+    state: present
+  when: ansible_distribution == 'Debian'
+
+- name: Start MariaDB
+  service:
+    name: mysql
+    state: started
+
 - name: Installing dependencies
   apt:
     pkg: "{{ item }}"
