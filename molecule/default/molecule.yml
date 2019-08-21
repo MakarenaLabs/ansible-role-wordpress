@@ -8,6 +8,10 @@ lint:
 platforms:
   - name: instance
     image: debian:10
+    exposed_ports:
+      - 80/tcp
+    published_ports:
+      - 0.0.0.0:8080:80/tcp
 provisioner:
   name: ansible
   lint:
