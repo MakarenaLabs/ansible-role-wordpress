@@ -1,4 +1,8 @@
 ---
+- name: Wordpress | Nginx | Figure out PHP FPM socket location
+  shell: basename $( ls /usr/sbin/php-fpm*)
+  register: 'php_ver'
+
 - name: Wordpress | Nginx | Copy virtual host configuration file
   template:
     src: "nginx-vhost.j2"
