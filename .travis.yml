@@ -4,7 +4,7 @@ python: "2.7"
 env:
   - PLAY=tests/test.yml
 
-dist: trusty
+dist: xenial
 
 before_install:
   - sudo add-apt-repository -y ppa:ondrej/php

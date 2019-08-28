@@ -9,10 +9,10 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - trusty
         - xenial
-        - yakkety
-    - name: Deboam
+        - bionic
+        - disco
+    - name: Debian
       versions:
         - buster
   galaxy_tags:
