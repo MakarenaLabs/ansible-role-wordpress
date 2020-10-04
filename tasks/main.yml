@@ -106,7 +106,7 @@
 
 - name: Installing dependencies
   apt:
-    pkg: [ 'python-mysqldb', 'php-mysql' ]
+    pkg: [ 'python3-mysqldb', 'php-mysql' ]
     update_cache: yes
     cache_valid_time: 86400
     state: present
