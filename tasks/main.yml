@@ -106,19 +106,12 @@
 
 - name: Installing dependencies
   apt:
-    pkg: [ 'python-mysqldb', 'php-mysql' ]
+    pkg: [ 'php-mysql', 'python3-pymysql' ]
     update_cache: yes
     cache_valid_time: 86400
     state: present
   notify:
     - restart {{ wp_webserver }}
-
-- name: Install pymysql
-  apt:
-    pkg: python3-pymysql
-    cache_valid_time: 86400
-    state: present
-  when: ansible_distribution == 'Ubuntu'
 
 - name: Create mysql database
   mysql_db:
