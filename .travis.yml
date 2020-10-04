@@ -9,12 +9,13 @@ dist: bionic
 before_install:
   - sudo add-apt-repository -y ppa:ondrej/php
   - sudo apt-get update -qq
+  - sudo apt-get install python3-mysqldb
 
 install:
   # Install Ansible.
   - pip3 install ansible
 
-  # Install PyMySQL
+  # Install PyMySQL.
   - pip3 install PyMySQL
 
   # Add ansible.cfg to pick up roles path.
